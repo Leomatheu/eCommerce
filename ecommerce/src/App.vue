@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderComponente/>
+  <PrimeiroComponente/>
+  <LifeCycle/>
+  <PessoaComponente/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  //imports dos componentes
+  import PrimeiroComponente from './components/PrimeiroComponente.vue'
+  import LifeCycle from './components/LifeCycle.vue'
+  import PessoaComponente from './components/PessoaComponente.vue'
+  import HeaderComponente from './components/HeaderComponente.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  export default{
+    name : "App",
+
+    components : {
+    PrimeiroComponente,
+    LifeCycle,
+    PessoaComponente,
+    HeaderComponente
 }
+  }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+
+  a {
+    color: red;
+  }
+
+  .teste {
+    background-color: black;
+  }
+
 </style>
