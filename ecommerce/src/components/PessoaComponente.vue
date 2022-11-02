@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Está é a descrição da pessoa: {{ nome }}</h2>
-        <InfoComponente/>
+        <InfoComponente :endereco= "endereco"/>
         <div>
             <FormComponente/>
         </div>
@@ -19,7 +19,8 @@
 
         data () {
             return {
-                nome : "Pessoa XPTO"
+                nome : "Pessoa XPTO",
+                endereco : "email.com.beerre"
             }
         },
 
